@@ -636,13 +636,13 @@ main {
   overflow-y: auto;
 }
 .home__body {
-  min-height: 100dvh;
+  min-height: 100vh;
   position: relative;
   z-index: 3;
 }
 @media (max-width: 450px) {
   .home__body {
-    min-height: 80dvh;
+    min-height: 80vh;
   }
 }
 .home__body::before,
