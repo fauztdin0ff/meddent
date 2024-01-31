@@ -19,6 +19,14 @@ document.addEventListener('click', (event) => {
    }
 });
 
+// Закрытие меню при клике по ссылке в меню
+document.querySelectorAll('.menu__link').forEach(link => {
+   link.addEventListener('click', (event) => {
+      document.body.classList.remove('_lock');
+      iconMenu.classList.remove('_active');
+      menuBody.classList.remove('_active');
+   });
+});
 /*--------------------------------------------preloader и анимация текста---------------------------------------------*/
 function hidePreloaderWithDelay() {
    const preloader = document.querySelector('.preloader');
